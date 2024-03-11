@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llyne's Portfolio</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="img/spot2.png" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Llynes' Portfolio</title>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <div class="container-fluid hero text-center d-flex justify-content-center align-items-center position-relative">
+      <nav class="position-absolute menu">
+        <ul>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+
+      <div class="hero_text">
+        <h1 class="hero_title"><span>HELLO</span> WORLD</h1>
+        <p class="hero_paragraph">
+          "Without data, you're just another person with an opinion." <br />
+          W. Edwards Deming
+        </p>
+      </div>
+    </div>
+
+    <!-- BIO -->
+    <div class="container-fluid biography d-flex justify-content-center align-items-center position-relative">
+      <img class="spot1 position-absolute" src="img/spot1.png" alt="spot1" />
+
+      <div class="container biography_container">
+        <div class="container row biography_person d-flex justify-content-center align-self-center">
+          <img class="col-md-4 biography_img" src="img/photo.png" />
+          <div class="col-md-8 biography_text container-fluid">
+            <p>
+              Hi, I am <span class="name">Llyne</span>. <br /><br />
+              Over the past few years, I have nurtured my passion for data
+              analysis wilding SQL and Python competently to manage data
+              effectively. With a solid foundation in these tools, I use Jupyter
+              for in-depth analysis to uncover insights that drive informed
+              decision-making. Moreover, I specialize in data visualization,
+              employing industry-leading tools to create compelling visuals that
+              simplify complex information.
+              <br /><br />
+              I am eager to apply my skills and learn from big companies in
+              dynamic industries such as insurance, pharmaceutical, banking, or
+              trading.
+            </p>
+            <div class="icons">
+              <img src="icons/html.svg" class="icon1" alt="html" />
+              <img src="icons/css.svg" class="icon1" alt="css" />
+              <img src="icons/sql.svg" class="icon1" alt="sql" />
+              <img src="icons/python.svg" class="icon1" alt="python" />
+              <img src="icons/jupyter.svg" class="icon1" alt="jupyter" />
+              <img src="icons/git.svg" class="icon1" alt="git" />
+              <img src="icons/github.svg" class="icon1" alt="github" />
+              <img src="icons/figma.svg" class="icon1" alt="figma" />
+              <img src="icons/tableau.svg" class="icon1" alt="tableau" />
+              <img src="icons/powerbi.svg" class="icon1" alt="powerbi" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center timeline">
+          <img
+            src="img/timelinemain.svg"
+            viewBox="0 0 20 50"
+            class="timelinemain"
+            alt="timelinemain"
+          />
+          <!-- <img
+                src="icons/timelinephone.svg"
+                class="text-center"
+                alt="timelinephone"
+            /> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="project1 container-fluid d-flex align-items-center">
+      <div class="project1_container container-fluid d-flex justify-content-center flex-wrap">
+        <div class="project1_text col-lg-5 row">
+          <div class="project1_heading">
+            <h2>Incidences in Barcelona</h2>
+            <h3>PYTHON, JUPYTER, TABLEAU</h3>
+          </div>
+          <p class="project1_p">In this dashboard you will be able to visualize the incidences that occurred in Spain, Barcelona, between the years 2019 until 2023. Also you will be able to interact with every neighborhood in the city and see the results isolated. This data has been gather from official sources of the Spanish Government.</p>
+          <div class="button_set container-fluid column d-flex justify-content-center">
+            <button class="button_main">Go To Dashboard</button>
+            <button class="button_secondary">Go To Github</button>
+          </div>
+        </div>
+        <div class="project1_img col-lg-7 row">
+          <img src="img/incidences_bcn.png" alt="dashboard-project1">
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS & HOBBIES -->
+    <div class="skills_hobbies container-fluid d-flex justify-content-center align-items-center position-relative">
+      <img class="spot2 position-absolute" src="img/spot2.png" alt="spot2" />
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact container-fluid d-flex justify-content-center align-items-center position-relative">
+      <img class="spot3 position-absolute" src="img/spot3.png" alt="spot3" />
+    </div>
+  </body>
 </html>

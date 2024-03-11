@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO */
+
+.menu {
+  top: 20px;
+}
+
+.hero {
+  height: 100vh;
+  background-color: var(--color-background-1);
+}
+
+.hero_title > span {
+  color: var(--color-button-primary);
+}
+
+/* BIO */
+
+.spot1 {
+  max-width: 350px;
+  bottom: 500px;
+  right: 0;
+}
+
+.biography {
+  background-color: var(--color-background-2);
+  height: 120vh;
+}
+
+.biography_container {
+  max-width: 980px;
+}
+
+.biography_person {
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  gap: 72px;
+}
+
+.biography_img {
+  max-width: 300px;
+  max-height: 300px;
+  padding: 0;
+  z-index: 500;
+}
+
+.biography_text {
+  padding: 0;
+  margin: 0;
+  max-width: 584px;
+  z-index: 500;
+}
+
+p > .name {
+  color: var(--color-button-primary);
+}
+
+.icons {
+  padding: 16px 0 0 0;
+}
+.icon1 {
+  padding: 8px;
+  fill: #fff;
+}
+
+.timeline {
+  padding: 88px 0 0 0;
+}
+
+.timelinemain {
+  max-width: 830px;
+}
+
+/* PROJECT 1 */
+
+.project1 {
+  background-color: var(--color-background-3);
+  height: 120vh;
+}
+
+.project1_text{
+  /* background-color: rgb(81, 0, 255); */
+}
+
+.project1_img > img{
+  /* background-color: rgb(0, 255, 4); */
+  object-fit: contain;
+}
+
+.project1_p{
+  font-size: var(--size-text-m);
+}
+
+.button_set {
+  /* display: flex;
+  gap: 60px; */
+}
+
+.button_secondary{
+  background-color: var(--color-button-secondary);
+}
+
+/* SKILLS & HOBBIES */
+
+.skills_hobbies{
+  background-color: var(--color-background-1);
+  height: 120vh;
+}
+
+/* CONTACT */
+
+.contact{
+  background-color: var(--color-background-2);
+  height: 120vh;
+}
