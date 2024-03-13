@@ -43,7 +43,13 @@
 
 .biography {
   background-color: var(--color-background-2);
-  height: 120vh;
+  height: 850px;
+}
+
+@media screen and (max-width: 992px) {
+  .biography{
+    height: 1000px;
+  }
 }
 
 .biography_container {
@@ -55,6 +61,12 @@
   justify-items: center;
   padding: 0;
   gap: 72px;
+}
+
+@media screen and (max-width: 992px) {
+  .biography_person{
+    gap: 32px;
+  }
 }
 
 .biography_img {
@@ -92,18 +104,38 @@ p > .name {
   max-width: 830px;
 }
 
+.timelinephone {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 400px) {
+  .timelinemain{
+    visibility: hidden;
+  }
+  .timelinephone {
+    visibility: visible;
+  }
+}
+
 /* PROJECT 1 */
 
 .project1 {
   background-color: var(--color-background-3);
-  height: 130vh;
+  height: 1000px;
+  max-height: 850px;
   overflow-x: hidden;
   position: relative;
 }
 
 .project1_container {
   position: absolute;
-  top: 20%;
+  top: 150px;
+}
+
+@media screen and (max-width: 992px) {
+  .project1_container{
+    top: 100px;
+  }
 }
 
 .project1_heading {
@@ -149,6 +181,12 @@ p > .name {
   font-size: var(--size-text-m);
 }
 
+@media screen and (max-width: 400px) {
+  .project1_p{
+    max-width: 390px;
+  }
+}
+
 .button_set {
   margin-top: 24px ;
 }
@@ -166,15 +204,22 @@ p > .name {
   color: var(--color-text-main);
 }
 
+@media screen and (max-width: 400px) {
+  button{
+    padding: 8px;
+  }
+}
 
 /* SKILLS & HOBBIES */
 
 .skills_hobbies{
   background-color: var(--color-background-1);
   height: 120vh;
+  max-height: 640px;
   text-align: center;
   overflow-x: hidden;
 }
+
 
 .content_container {
   z-index: 500;
@@ -209,8 +254,13 @@ p > .name {
   margin: 8px;
 }
 
+.contact_content{
+  z-index: 500;
+}
+
 .spot3 {
   width: 100%;
+  max-width: 600px;
   height: auto;
   bottom:50px;
   right: 150px;
