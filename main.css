@@ -4,8 +4,7 @@
   --size-title-m: 2.125rem;
   --size-title-l: 5rem;
   --color-title: #e2e2e2;
-  --style-title-shadow-l: 6px 6px 0px rgb(4, 6, 32, 1);
-  --style-title-shadow-s: 4px 4px 8px rgb(4, 6, 32, 0.3);
+  --style-title-shadow: 4px 4px 8px rgb(4, 6, 32, 0.3);
 
   --size-text-s: 1rem;
   --size-text-m: 1.25rem;
@@ -18,8 +17,8 @@
   --color-button-secondary: rgba(255, 255, 255, 0.25);
   --size-button-text: 1.25rem;
   --style-button-radius: 5rem;
-  --style-button-shadow1: 3 3px 10px #040620;
-  --style-button-shadow2: 3 3px 10px #280c76;
+  --style-button-shadow1: 10px 10px 0px #040620;;
+  --style-button-shadow2: 10px 10px 0px #2e00b0;;
   --style-button-padding: 1rem 2rem;
 
   --color-background-1: #2e00b0;
@@ -41,6 +40,7 @@
 
 body {
   font-family: "MadeOuterSansThin", sans-serif;
+  overflow-x: hidden;
 }
 
 p,
@@ -54,44 +54,55 @@ h3 {
 h1 {
   font-size: var(--size-title-l);
   font-family: "MadeOuterSansBold";
-  text-shadow: var(--style-title-shadow-l);
+  text-shadow: var(--style-title-shadow);
 }
 
 h2 {
   font-size: var(--size-title-m);
   font-family: "MadeOuterSansBold";
-  text-shadow: var(--style-title-shadow-s);
+  text-shadow: var(--style-title-shadow);
 }
 
 h3 {
   font-size: var(--size-title-s);
   font-family: "MadeOuterSansBold";
-  text-shadow: var(--style-title-shadow-s);
+  text-shadow: var(--style-title-shadow);
 }
 
 p {
   font-size: var(--size-text-s);
   color: var(--color-text-main);
+  margin-bottom: 0;
 }
 
 li {
-  font-size: var(--size-title-s);
   color: var(--color-text-main);
-  font-family: "MadeOuterSansBold";
-  text-shadow: var(--style-title-shadow-s);
-}
-
-ul {
   list-style: none;
 }
 
+ul {
+  padding-left: 0;
+}
+
 button {
-  /* max-height: 53px; */
+  border: none;
   border-radius: var(--style-button-radius);
   padding: var(--style-button-padding);
   box-shadow: var(--style-button-shadow1);
   background-color: var(--color-button-primary);
   color: var(--color-button-text-primary);
+}
+
+@media screen and (max-width: 375px) {
+  .h1 {
+    font-size: var(--size-title-m)
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .h1 {
+    font-size: var(--size-title-s)
+  }
 }
 
 /*

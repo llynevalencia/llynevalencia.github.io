@@ -15,6 +15,12 @@
   top: 20px;
 }
 
+.menu_contact {
+  font-size: var(--size-title-s);
+  font-family: "MadeOuterSansBold";
+  text-shadow: var(--style-title-shadow);
+}
+
 .hero {
   height: 100vh;
   background-color: var(--color-background-1);
@@ -30,6 +36,7 @@
   max-width: 350px;
   bottom: 500px;
   right: 0;
+  z-index: 100;
 }
 
 .biography {
@@ -86,16 +93,52 @@ p > .name {
 
 .project1 {
   background-color: var(--color-background-3);
-  height: 120vh;
+  height: 130vh;
+  position: relative;
+}
+
+.project1_container {
+  position: absolute;
+  top: 20%;
+}
+
+.project1_heading {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .project1_heading {
+    text-align: center;
+  }
 }
 
 .project1_text{
-  /* background-color: rgb(81, 0, 255); */
+  max-width: 597px;
+  min-width: 421px;
+}
+
+.project1_img{
+  position: relative;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 992px) {
+  .project1_img {
+    max-width: 700px;
+  }
 }
 
 .project1_img > img{
-  /* background-color: rgb(0, 255, 4); */
   object-fit: contain;
+}
+
+@media screen and (min-width: 992px) {
+  .project1_img > img {
+    position: absolute;
+    min-width: 1100px;
+    left: -100px;
+    top: 0px;
+  }
 }
 
 .project1_p{
@@ -103,12 +146,21 @@ p > .name {
 }
 
 .button_set {
-  /* display: flex;
-  gap: 60px; */
+  margin-top: 24px ;
+}
+
+@media screen and (max-width: 992px) {
+  .button_set {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
 }
 
 .button_secondary{
+  margin-left: 32px;
   background-color: var(--color-button-secondary);
+  color: var(--color-text-main);
 }
 
 /* SKILLS & HOBBIES */
@@ -116,11 +168,45 @@ p > .name {
 .skills_hobbies{
   background-color: var(--color-background-1);
   height: 120vh;
+  text-align: center;
 }
+
+.content_container {
+  z-index: 500;
+}
+
+.emoji {
+  font-size: 80px;
+}
+
+.spot2 {
+  left: 100px;
+  bottom: 500px;
+  max-width: 600px;
+}
+
 
 /* CONTACT */
 
 .contact{
   background-color: var(--color-background-2);
   height: 120vh;
+}
+
+.footer {
+  bottom: 0;
+}
+
+.footer > img{
+  margin: 16px 8px 32px 8px;
+}
+
+.spot3 {
+  bottom:50px;
+  right: 150px;
+}
+
+.cta_main {
+  margin-top: 16px;
+  box-shadow: var(--style-button-shadow2);
 }
