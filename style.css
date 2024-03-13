@@ -33,6 +33,8 @@
 /* BIO */
 
 .spot1 {
+  width: 100%;
+  height: auto;
   max-width: 350px;
   bottom: 500px;
   right: 0;
@@ -94,6 +96,7 @@ p > .name {
 .project1 {
   background-color: var(--color-background-3);
   height: 130vh;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -153,15 +156,15 @@ p > .name {
   .button_set {
     display: flex;
     justify-content: center;
-    gap: 32px;
   }
 }
 
 .button_secondary{
-  margin-left: 32px;
+  margin-left: 24px;
   background-color: var(--color-button-secondary);
   color: var(--color-text-main);
 }
+
 
 /* SKILLS & HOBBIES */
 
@@ -169,6 +172,7 @@ p > .name {
   background-color: var(--color-background-1);
   height: 120vh;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .content_container {
@@ -183,6 +187,8 @@ p > .name {
   left: 100px;
   bottom: 500px;
   max-width: 600px;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -195,13 +201,16 @@ p > .name {
 
 .footer {
   bottom: 0;
+  margin-bottom: 36px;
 }
 
-.footer > img{
-  margin: 16px 8px 32px 8px;
+.footer > a {
+  margin: 8px;
 }
 
 .spot3 {
+  width: 100%;
+  height: auto;
   bottom:50px;
   right: 150px;
 }
