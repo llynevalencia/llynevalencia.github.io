@@ -18,8 +18,8 @@
   --color-button-secondary: #C2C0BF;/* rgba(50, 41, 41, 0.25);*/
   --size-button-text: 1.5rem;
   --style-button-radius: 5rem;
-  --style-button-shadow1: 4px 4px 0px #040620;;
-  --style-button-shadow2: 4px 4px 0px #379777;;
+  --style-button-shadow1: 10px 10px 0px #040620;;
+  --style-button-shadow2: 10px 10px 0px #379777;;
   --style-button-padding: 1rem 2rem;
 
   --color-background-1: #F3F3F1;
