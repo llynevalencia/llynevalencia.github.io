@@ -29,13 +29,8 @@
           <li class="menu_contact"><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-
       <div class="hero_text container-fluid">
-        <h1 class="hero_title"><span>HELLO</span> WORLD</h1>
-        <p class="hero_paragraph">
-          "Without data, you're just another person with an opinion." <br />
-          W. Edwards Deming
-        </p>
+        <h1 class="hero_title"><span>WITHOUT DATA</span>, YOU’RE JUST ANOTHER PERSON WITH <span>AN OPINION</span>.</h1>
       </div>
     </div>
 
@@ -47,7 +42,7 @@
         <div class="container row biography_person d-flex justify-content-center align-self-center">
           <img class="col-md-4 biography_img" src="img/photo.jpg" />
           <div class="col-md-8 biography_text container-fluid">
-            <p>
+            <p class="biography_text_par">
               Hi, I am <span class="name">Llyne</span>. <br /><br />
               Over recent years, I've dedicated myself to honing my skills in data analysis, adeptly wielding SQL and Python to manage data effectively. With a strong grasp of these tools, I leverage Jupyter Notebook for thorough analysis, uncovering insights crucial for informed decision-making. Furthermore, I have a strong affinity for data visualization, utilizing industry-leading tools to craft engaging visuals that distill complex information into clear narratives.
             </p>
@@ -67,35 +62,94 @@
         </div>
 
         <div class="row justify-content-center timeline">
-          <img src="img/timelinemain.svg" viewBox="0 0 20 50" class="timelinemain" alt="timelinemain"/>
-          <!-- <img src="img/timelinephone.svg" class="text-center timelinephone" alt="timelinephone"/> -->
+          <img src="img/timeline.svg" viewBox="0 0 20 50" class="timelinemain" alt="timeline"/>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT 1 -->
+    <!-- PROJECT UNHCR ACNUR -->
     <div class="project1 container-fluid d-flex align-items-center">
       <div class="project1_container container-fluid d-flex justify-content-center flex-wrap">
+        <div class="project1_text col-lg-5 row d-flex justify-content-center">
+          <div class="project1_heading container-fluid">
+            <h2 class="container-fluid">UNHCR ACNUR</h2>
+            <h3 class="container-fluid">TABLEAU DESKTOP</h3>
+          </div>
+          <p class="project1_p">The United Nations High Commissioner for Refugees (UNHCR) safeguards the rights of refugees worldwide. This interactive dashboard allows you to explore global refugee trends from 2001 to 2021. Use the year and country filters to gain insights into refugee populations by origin and destination.</p>
+          <div class="button_set container-fluid column">
+            <a href="https://public.tableau.com/app/profile/llyne.valencia/viz/UNHCRACNURRefugees/World" target="blank"><button class="button_main">Go To Dashboard</button></a>
+            <!--<a href="https://github.com/llynevalencia/incidences" target="blank"><button class="button_secondary">See Dataset</button></a> -->
+          </div>
+        </div>
+        <div class="project1_img col-lg-7 row">
+          <img src="img/acnur.png" alt="dashboard-project1">
+        </div>
+      </div>
+      <img class="spot2 position-absolute" src="img/spot2.png" alt="spot2" />
+    </div>
+
+    <!-- PROJECT UFO -->
+    <!-- <div class="project1 container-fluid d-flex align-items-center project2">
+      <div class="project1_container project2_container container-fluid d-flex justify-content-center flex-wrap">
+        <div class="project2_img col-lg-7 row">
+          <img src="img/ufo.png" alt="dashboard-project1">
+        </div>
         <div class="project1_text col-lg-5 row">
           <div class="project1_heading container-fluid">
+            <h2 class="container-fluid">UFO SIGHTING</h2>
+            <h3 class="container-fluid">TABLEAU DESKTOP, TABLEAU PREP</h3>
+          </div>
+          <p class="project1_p">This analysis delves into UFO sightings reported across the United States from 1940 to 2014. We'll explore trends in the number of sightings by state over time and utilize the density map to identify potential hotspots for UFO activity.</p>
+          <div class="button_set container-fluid column">
+            <a href="https://public.tableau.com/app/profile/llyne.valencia/viz/UFO1940-2014/presentacin2" target="blank"><button class="button_main">Go To Dashboard</button></a>
+            <a href="https://github.com/llynevalencia/incidences" target="blank"><button class="button_secondary">Go To Repository</button></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container-fluid d-flex align-items-center project2">
+      <div class="project2_container container-fluid d-flex justify-content-center flex-wrap">
+        <div class="project2_img col-lg-7 d-flex justify-content-center">
+          <img src="img/ufo.png" alt="dashboard-project1">
+        </div>
+        <div class="project1_text col-lg-5 row d-flex justify-content-center">
+          <div class="project1_heading project2_heading container-fluid">
+            <h2 class="container-fluid">UFO SIGHTING</h2>
+            <h3 class="container-fluid">TABLEAU DESKTOP, TABLEAU PREP</h3>
+          </div>
+          <p class="project1_p project2_p">This analysis delves into UFO sightings reported across the United States from 1940 to 2014. We'll explore trends in the number of sightings by state over time and utilize the density map to identify potential hotspots for UFO activity.</p>
+          <div class="button_set container-fluid column">
+            <a href="https://public.tableau.com/app/profile/llyne.valencia/viz/UFO1940-2014/presentacin2" target="blank"><button class="button_main">Go To Dashboard</button></a>
+            <a href="https://github.com/llynevalencia/ovni" target="blank"><button class="button_secondary">See Dataset</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT INCIDENCES -->
+    <div class="project1 project3 container-fluid d-flex align-items-center">
+      <div class="project1_container container-fluid d-flex justify-content-center flex-wrap">
+        <div class="project1_text col-lg-5 row d-flex justify-content-center">
+          <div class="project1_heading project3_heading container-fluid">
             <h2 class="container-fluid">INCIDENCES IN BARCELONA</h2>
             <h3 class="container-fluid">PYTHON, JUPYTER, TABLEAU</h3>
           </div>
           <p class="project1_p">In this dashboard you will be able to visualize the incidences that occurred in Spain, Barcelona, between the years 2019 until 2023. Also you will be able to interact with every neighborhood in the city and see the results isolated. This data has been gather from official sources of the Spanish Government.</p>
           <div class="button_set container-fluid column">
             <a href="https://public.tableau.com/app/profile/llyne.valencia/viz/IncidencesinBarcelona/bcn_incidents" target="blank"><button class="button_main">Go To Dashboard</button></a>
-            <a href="https://github.com/llynevalencia/incidences" target="blank"><button class="button_secondary">Go To Repository</button></a>
+            <a href="https://github.com/llynevalencia/incidences" target="blank"><button class="button_secondary">See Repository</button></a>
           </div>
         </div>
-        <div class="project1_img col-lg-7 row">
-          <img src="img/incidences_bcn.png" alt="dashboard-project1">
+        <div class="project3_img col-lg-7 row d-flex justify-content-center">
+          <img src="img/incidents(1).png" alt="dashboard-project1">
         </div>
       </div>
     </div>
 
-    <!-- SKILLS & HOBBIES -->
+    <!--
+      SKILLS & HOBBIES 
     <div class="skills_hobbies container-fluid d-flex justify-content-center align-items-center position-relative">
-      <img class="spot2 position-absolute" src="img/spot2.png" alt="spot2" />
       <div class="content_container container">
         <div class="skills">
           <p class="emoji">🖤</p>
@@ -117,6 +171,7 @@
         </div>
       </div>
     </div>
+    -->
 
     <!-- CONTACT -->
     <div class="contact container-fluid text-center d-flex justify-content-center align-items-center position-relative">
@@ -126,8 +181,9 @@
         <a href="mailto:llyne.v.t@gmail.com?subject=Subject%20Hello%20Llyne&body=Body%20Text%20Here" class="button"><button class="cta_main">Send Email</button></a>
       </div>
       <div class="footer position-absolute" id="contact">
-        <a href="https://www.linkedin.com/in/llyne-valencia-tovar-83253b111/" target="blank"><img src="icons/linkedin.svg" alt="linkedin"></a>
+        <a href="https://www.linkedin.com/in/llyne-valencia-tovar-83253b111/" target="blank"><img src="icons/linkedin.svg" alt="linkedin" fill="#e2e2e2"></a>
         <a href="https://github.com/llynevalencia" target="blank"><img src="icons/github1.svg" alt="github"></a>
+        <a href="https://public.tableau.com/app/profile/llyne.valencia/vizzes" target="blank"><img src="icons/tableau1.svg" alt="github"></a>
       </div>
     </div>
   </body>

@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 /* HERO */
 
 .menu {
@@ -24,6 +29,10 @@
 .hero {
   height: 100vh;
   background-color: var(--color-background-1);
+}
+
+.hero_text {
+  width: 900px;
 }
 
 .hero_title > span {
@@ -84,6 +93,10 @@
   z-index: 500;
 }
 
+.biography_text_par {
+  color: var(--color-text-secondary);
+}
+
 p > .name {
   color: var(--color-button-primary);
 }
@@ -120,10 +133,9 @@ p > .name {
 /* PROJECT 1 */
 
 .project1 {
-  background-color: var(--color-background-3);
-  height: 1000px;
-  max-height: 850px;
-  overflow-x: hidden;
+  background-color: var(--color-background-1);
+  height: 1050px;
+  /*max-height: 850px;*/
   position: relative;
 }
 
@@ -140,27 +152,48 @@ p > .name {
 
 .project1_heading {
   margin-bottom: 24px;
+  padding: 0;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1078px) {
   .project1_heading {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .project2_heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1208px) {
+  .project3_heading {
+    text-align: center;
+    height: auto;
   }
 }
 
 .project1_text{
   max-width: 597px;
   min-width: 421px;
+  z-index: 100;
 }
+
+/*LAPTOP BIG*/
 
 .project1_img{
   position: relative;
   max-width: 500px;
+  z-index: 1000;
 }
 
-@media screen and (max-width: 992px) {
-  .project1_img {
-    max-width: 700px;
+@media screen and (min-width: 1100px) {
+  .project1_img > img {
+    position: absolute;
+    min-width: 1100px;
+    left: 0px;
+    top: 0px;
   }
 }
 
@@ -168,22 +201,81 @@ p > .name {
   object-fit: contain;
 }
 
-@media screen and (min-width: 992px) {
-  .project1_img > img {
-    position: absolute;
-    min-width: 1100px;
-    left: -100px;
-    top: 0px;
-  }
-}
-
 .project1_p{
   font-size: var(--size-text-m);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   .project1_p{
     max-width: 390px;
+    font-size: 1rem;
+  }
+}
+
+/* IPAD */
+
+.project2 {
+  background-color: var(--color-background-3);
+  height: 860px;
+  position: relative;
+}
+
+.project2_container {
+  /*padding for text*/
+  padding: 200px 0px 0px 580px;
+}
+
+.project1_text {
+  min-width: 600px;
+}
+
+.project2_img{
+  position: absolute;
+  top: -140px;
+  left: 200px;
+  max-width: 550px;
+  z-index: 0;
+}
+
+.project2_p{
+  color: var(--color-text-secondary);
+}
+
+@media screen and (max-width: 1150px) {
+  .project2_img{
+    position:relative;
+    top: 0;
+    left: 0;
+  }
+  .project2_img img{
+    width: 50%;
+  }
+  .project2_container {
+    /*padding for text*/
+    padding: 0;
+  }
+  .project1_text {
+    padding-top: 16px;
+  }
+}
+
+/*LAPTOP SMALL*/
+
+.project3{
+  height: 900px;
+}
+
+.project3_img {
+  padding-top: 28px;
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
+  min-width: 630px;
+}
+
+@media screen and (max-width: 1150px) {
+  .project3_img img{
+    max-width: 60%;
   }
 }
 
@@ -198,10 +290,27 @@ p > .name {
   }
 }
 
+.button_main {
+  font-size: var(--size-button-text);
+}
+
+@media screen and (max-width: 650px) {
+  .button_main {
+    font-size: 1rem;
+  }
+}
+
 .button_secondary{
   margin-left: 24px;
   background-color: var(--color-button-secondary);
   color: var(--color-text-main);
+  font-size: var(--size-button-text);
+}
+
+@media screen and (max-width: 650px) {
+  .button_secondary{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -210,19 +319,19 @@ p > .name {
   }
 }
 
-/* SKILLS & HOBBIES */
+/* SKILLS & HOBBIES
 
 .skills_hobbies{
   background-color: var(--color-background-1);
   height: 120vh;
   max-height: 640px;
   text-align: center;
-  overflow-x: hidden;
+  /*overflow-x: hidden;
 }
-
+*/
 
 .content_container {
-  z-index: 500;
+  /*z-index: 500;*/
 }
 
 .emoji {
@@ -230,19 +339,25 @@ p > .name {
 }
 
 .spot2 {
-  left: 100px;
-  bottom: 500px;
+  left: 700px;
+  top: 400px;
   max-width: 600px;
-  width: 100%;
+  width: 80%;
   height: auto;
+  z-index: 0;
 }
 
+@media screen and (max-width: 1100px){
+  .spot2{
+    left: auto
+  }
+}
 
 /* CONTACT */
 
 .contact{
   background-color: var(--color-background-2);
-  height: 120vh;
+  height: 100vh;
 }
 
 .footer {
@@ -252,18 +367,23 @@ p > .name {
 
 .footer > a {
   margin: 8px;
+  color: var(--color-text-main);
 }
 
 .contact_content{
   z-index: 500;
 }
 
+.contact_content h1 {
+  color: var(--color-text-secondary);
+}
+
 .spot3 {
   width: 100%;
   max-width: 600px;
   height: auto;
-  bottom:50px;
-  right: 150px;
+  bottom: 0;
+  left: 50px;
 }
 
 .cta_main {
